@@ -209,7 +209,7 @@ export default function Home() {
             B.Tech · Software Product Engineering · Kalvium
           </motion.p>
           <motion.h1 initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1 }}>
-            I build <span>3D-ready digital products</span><br /> from idea to deployment.
+            Full-Stack Developer building <span>production-ready web applications.</span>
           </motion.h1>
           <motion.p className="heroText" initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             I&apos;m Cherukuri Yogini, a second-year B.Tech student at Kalvium focused on Software Product Engineering. I enjoy building full-stack products, real-time experiences and AI-assisted features that solve practical problems.
