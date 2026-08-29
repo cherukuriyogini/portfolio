@@ -1,89 +1,90 @@
-/* Portfolio UI refresh: cleaner typography, stronger hierarchy, and more polished spacing. */
-
+/* Compact UI refresh — smaller typography, cleaner spacing, and a sharper portfolio layout. */
 body {
   font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  font-size: 16px;
-  letter-spacing: -0.01em;
+  font-size: 14px;
+  letter-spacing: -0.008em;
 }
 
-.nav {
-  height: 82px;
-  padding: 0 5.5vw;
-  background: rgba(7, 9, 10, 0.82);
-  border-bottom-color: rgba(199, 255, 61, 0.12);
-}
+.nav { height: 70px; padding: 0 6vw; }
+.brand { font-size: 22px; }
+.navLinks { gap: 25px; }
+.navLinks button { font-size: 13px; font-weight: 600; }
+.navCta { padding: 10px 15px; font-size: 13px; }
 
-.brand { font-size: 28px; letter-spacing: -0.04em; }
-.navLinks { gap: 34px; }
-.navLinks button { font-size: 15px; font-weight: 600; }
-.navCta { padding: 13px 19px; font-size: 14px; }
-
-.section { padding: 135px 7vw; }
-.hero { padding-top: 155px; gap: 80px; }
-.eyebrow { font-size: 13px; margin-bottom: 22px; }
+.section { padding: 100px 8vw; }
+.hero { padding-top: 125px; gap: 55px; min-height: 92vh; }
+.eyebrow { font-size: 10px; margin-bottom: 15px; letter-spacing: .14em; }
 .hero h1 {
-  font-size: clamp(52px, 6.2vw, 86px);
+  font-size: clamp(40px, 5vw, 68px);
   line-height: 1.02;
-  letter-spacing: -0.06em;
-  max-width: 900px;
-  margin-bottom: 28px;
+  letter-spacing: -0.055em;
+  max-width: 760px;
+  margin-bottom: 22px;
 }
-.heroText { font-size: 19px; line-height: 1.8; max-width: 680px; }
-.heroActions { margin-top: 32px; gap: 14px; }
-.primaryBtn, .secondaryBtn { font-size: 15px; padding: 13px 19px; }
+.heroText { font-size: 15px; line-height: 1.7; max-width: 620px; }
+.heroActions { margin-top: 25px; gap: 10px; }
+.primaryBtn, .secondaryBtn { font-size: 13px; padding: 10px 15px; }
 
-.sectionHead { max-width: 900px; margin-bottom: 56px; }
-.sectionHead h2 { font-size: clamp(38px, 4.5vw, 58px); line-height: 1.05; }
-.sectionHead > p:last-child { font-size: 16px; }
+.heroSceneShell, .heroScene { min-height: 500px; }
+.coreOrb { width: 135px; height: 135px; left: calc(50% - 67.5px); top: calc(50% - 67.5px); }
 
-.aboutGrid { gap: 60px; }
-.aboutCardInner { padding: 42px; }
-.about p { font-size: 17px; line-height: 1.9; }
-.about .lead { font-size: 24px; }
-.factCube { padding: 30px; }
-.factCube strong { font-size: 36px; }
-.factCube span { font-size: 13px; }
+.sectionHead { max-width: 760px; margin-bottom: 38px; }
+.sectionHead h2 { font-size: clamp(30px, 4vw, 50px); line-height: 1.05; margin-bottom: 14px; }
+.sectionHead > p:last-child { font-size: 14px; line-height: 1.65; }
 
-.skillGrid { gap: 22px; }
-.skillCard { padding: 32px; }
-.skillCard h3 { font-size: 21px; }
-.chips span { font-size: 13px; padding: 8px 11px; }
+.aboutGrid { gap: 40px; }
+.aboutCardInner { padding: 28px; }
+.about p { font-size: 14px; line-height: 1.75; }
+.about .lead { font-size: 19px; line-height: 1.5; }
+.factCube { padding: 21px; }
+.factCube strong { font-size: 28px; }
+.factCube span { font-size: 11px; }
 
-.contribution { padding: 31px 18px; grid-template-columns: 70px 1fr 1.6fr; gap: 28px; }
-.contribution h3 { font-size: 22px; }
-.contribution p { font-size: 16px; line-height: 1.75; }
+.skillGrid { gap: 15px; }
+.skillCard { padding: 24px; }
+.skillCard h3 { margin: 20px 0 12px; font-size: 17px; }
+.skillIcon3d { width: 43px; height: 43px; }
+.chips { gap: 5px; }
+.chips span { font-size: 10px; padding: 6px 8px; }
 
-.projects { padding-left: 7vw; padding-right: 7vw; }
-.projectList, .projectIntro { max-width: 1280px; }
-.projectList { gap: 34px; }
-.projectContent3d { padding: 38px; }
-.projectSubtitle { font-size: 13px; }
-.projectCard h3 { font-size: 38px; }
-.projectDescription, .projectCard ul { font-size: 16px; line-height: 1.8; }
-.projectCard h4 { font-size: 13px; }
+.contribution { padding: 23px 12px; grid-template-columns: 55px 1fr 1.5fr; gap: 20px; }
+.contribution > span { font-size: 10px; }
+.contribution h3 { font-size: 17px; }
+.contribution p { font-size: 13px; line-height: 1.6; }
 
-.educationCard { padding: 44px; }
-.educationCard h2 { font-size: 32px; }
-.educationMeta strong { font-size: 27px; }
+.projects { padding-left: 8vw; padding-right: 8vw; }
+.projectList, .projectIntro { max-width: 1150px; }
+.projectList { gap: 22px; }
+.projectContent3d { padding: 27px; }
+.projectSubtitle { font-size: 10px; margin-top: 25px; }
+.projectCard h3 { font-size: 30px; margin-bottom: 12px; }
+.projectDescription, .projectCard ul { font-size: 13px; line-height: 1.65; }
+.projectCard h4 { font-size: 10px; margin-top: 22px; }
+.projectLinks a { width: 35px; height: 35px; }
 
-.contactCard { padding: 88px 34px; }
-.contactCard h2 { font-size: clamp(42px, 5.5vw, 68px); }
-.contactCard > p:not(.eyebrow) { font-size: 17px; }
-.socials a { font-size: 14px; }
-footer { font-size: 13px; }
+.educationCard { padding: 32px; }
+.educationCard h2 { font-size: 25px; }
+.educationMeta strong { font-size: 23px; }
+
+.contactCard { padding: 65px 25px; }
+.contactCard h2 { font-size: clamp(34px, 5vw, 58px); }
+.contactCard > p:not(.eyebrow) { font-size: 14px; }
+.socials a { font-size: 12px; }
+footer { font-size: 10px; padding: 20px 8vw; }
 
 @media (max-width: 980px) {
-  .hero { gap: 50px; }
-  .hero h1 { font-size: clamp(48px, 8vw, 72px); }
+  .hero { gap: 35px; }
+  .hero h1 { font-size: clamp(38px, 7vw, 60px); }
 }
 
 @media (max-width: 650px) {
-  .section { padding: 95px 6vw; }
-  .hero { padding-top: 125px; }
-  .hero h1 { font-size: clamp(42px, 13vw, 58px); line-height: 1.02; }
-  .heroText { font-size: 17px; }
-  .sectionHead h2 { font-size: 38px; }
-  .about .lead { font-size: 21px; }
-  .aboutCardInner, .projectContent3d, .educationCard { padding: 28px; }
-  .contribution { padding: 25px 8px; }
+  .section { padding: 75px 6vw; }
+  .hero { padding-top: 110px; min-height: auto; }
+  .hero h1 { font-size: clamp(36px, 11vw, 50px); }
+  .heroText { font-size: 14px; }
+  .sectionHead h2 { font-size: 32px; }
+  .about .lead { font-size: 18px; }
+  .aboutCardInner, .projectContent3d, .educationCard { padding: 23px; }
+  .contribution { padding: 20px 6px; }
+  .heroSceneShell, .heroScene { min-height: 400px; }
 }
