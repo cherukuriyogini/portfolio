@@ -1,0 +1,89 @@
+/* Portfolio UI refresh: cleaner typography, stronger hierarchy, and more polished spacing. */
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 16px;
+  letter-spacing: -0.01em;
+}
+
+.nav {
+  height: 82px;
+  padding: 0 5.5vw;
+  background: rgba(7, 9, 10, 0.82);
+  border-bottom-color: rgba(199, 255, 61, 0.12);
+}
+
+.brand { font-size: 28px; letter-spacing: -0.04em; }
+.navLinks { gap: 34px; }
+.navLinks button { font-size: 15px; font-weight: 600; }
+.navCta { padding: 13px 19px; font-size: 14px; }
+
+.section { padding: 135px 7vw; }
+.hero { padding-top: 155px; gap: 80px; }
+.eyebrow { font-size: 13px; margin-bottom: 22px; }
+.hero h1 {
+  font-size: clamp(52px, 6.2vw, 86px);
+  line-height: 1.02;
+  letter-spacing: -0.06em;
+  max-width: 900px;
+  margin-bottom: 28px;
+}
+.heroText { font-size: 19px; line-height: 1.8; max-width: 680px; }
+.heroActions { margin-top: 32px; gap: 14px; }
+.primaryBtn, .secondaryBtn { font-size: 15px; padding: 13px 19px; }
+
+.sectionHead { max-width: 900px; margin-bottom: 56px; }
+.sectionHead h2 { font-size: clamp(38px, 4.5vw, 58px); line-height: 1.05; }
+.sectionHead > p:last-child { font-size: 16px; }
+
+.aboutGrid { gap: 60px; }
+.aboutCardInner { padding: 42px; }
+.about p { font-size: 17px; line-height: 1.9; }
+.about .lead { font-size: 24px; }
+.factCube { padding: 30px; }
+.factCube strong { font-size: 36px; }
+.factCube span { font-size: 13px; }
+
+.skillGrid { gap: 22px; }
+.skillCard { padding: 32px; }
+.skillCard h3 { font-size: 21px; }
+.chips span { font-size: 13px; padding: 8px 11px; }
+
+.contribution { padding: 31px 18px; grid-template-columns: 70px 1fr 1.6fr; gap: 28px; }
+.contribution h3 { font-size: 22px; }
+.contribution p { font-size: 16px; line-height: 1.75; }
+
+.projects { padding-left: 7vw; padding-right: 7vw; }
+.projectList, .projectIntro { max-width: 1280px; }
+.projectList { gap: 34px; }
+.projectContent3d { padding: 38px; }
+.projectSubtitle { font-size: 13px; }
+.projectCard h3 { font-size: 38px; }
+.projectDescription, .projectCard ul { font-size: 16px; line-height: 1.8; }
+.projectCard h4 { font-size: 13px; }
+
+.educationCard { padding: 44px; }
+.educationCard h2 { font-size: 32px; }
+.educationMeta strong { font-size: 27px; }
+
+.contactCard { padding: 88px 34px; }
+.contactCard h2 { font-size: clamp(42px, 5.5vw, 68px); }
+.contactCard > p:not(.eyebrow) { font-size: 17px; }
+.socials a { font-size: 14px; }
+footer { font-size: 13px; }
+
+@media (max-width: 980px) {
+  .hero { gap: 50px; }
+  .hero h1 { font-size: clamp(48px, 8vw, 72px); }
+}
+
+@media (max-width: 650px) {
+  .section { padding: 95px 6vw; }
+  .hero { padding-top: 125px; }
+  .hero h1 { font-size: clamp(42px, 13vw, 58px); line-height: 1.02; }
+  .heroText { font-size: 17px; }
+  .sectionHead h2 { font-size: 38px; }
+  .about .lead { font-size: 21px; }
+  .aboutCardInner, .projectContent3d, .educationCard { padding: 28px; }
+  .contribution { padding: 25px 8px; }
+}
