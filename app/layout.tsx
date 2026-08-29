@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./portfolio-ui.css";
+import "./project-fix.css";
 
 export const metadata: Metadata = {
   title: "Cherukuri Yogini | Software Product Engineering",
